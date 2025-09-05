@@ -1,1 +1,9 @@
+class Aviao:
+  fabricante = "Boeing"
+  cor = "Branca"
 
+aviao = Aviao()
+print('Fabricante')
+print(aviao.fabricante)
+print('cor')
+print(aviao.cor)

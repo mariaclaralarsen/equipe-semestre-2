@@ -1,0 +1,8 @@
+class Eletrica:
+  def __init__(self,x,q1,q2,t):
+    self.x = x
+    self.q1 = q1
+    self.q2 = q2
+    self.t = t
+  def FenomenoEletrica(self):
+    return self.x*self.q1*self.q2*self.t

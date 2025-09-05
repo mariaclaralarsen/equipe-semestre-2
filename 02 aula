@@ -1,0 +1,19 @@
+class Particula:
+  def __init__(self, massa, velocidade):
+    self.massa = massa
+    self.velocidade = velocidade
+
+  def momento(self):
+    return self.massa * self.velocidade
+
+  def __repr__(self):
+    formato = "(m:%2.1f,v:%2.1f)" % (self.massa, self.velocidade)
+    return formato
+
+variaveis_particula = Particula(5.2, 6.5)
+print('variaveis da particula')
+print(variaveis_particula)
+
+momento_particula = variaveis_particula.momento()
+print('momento da particula')
+print(momento_particula)

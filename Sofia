@@ -1,0 +1,18 @@
+distancias = np.linspace(0.01, 1, 100)
+
+forcas = []
+for distancia in distancias:
+  forca = coulomb_force(carga1, carga2, distancia)
+  forcas.append(forcas)
+
+forcas = np.array(forcas)  
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.plot(distancia, forcas)
+plt.xlabel("Distância (m)")
+plt.ylabel("Força Elétrica (N)")
+plt.title("Força Elétrica vs. Distância")
+plt.grid(True)
+plt.show()

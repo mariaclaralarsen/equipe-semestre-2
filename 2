@@ -1,0 +1,15 @@
+import numpy as np
+
+def coulomb_force(q1, q2, r): 
+  k = 8.98755e9 # Constante de Coulomb (N * m^2 / C^2)
+  force = k * (q1 * q2) / (r**2)
+  return force
+
+# Exemplo de uso:
+carga1 = 1e-6 # 1 microcoulomb
+carga2 = -2e-6 # -2 microcoulombs
+distancia = 0.1 # 10 centímetros
+
+forca_eletrica = coulomb_force(carga1, carga2, distancia)
+
+print(f"A força elétrica entre as cargas é: {forca_eletrica:.2f} N")

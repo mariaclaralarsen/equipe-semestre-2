@@ -1,0 +1,24 @@
+import numpy
+
+print('Criando uma matriz a partir de uma lista:')
+l = [[3,4,5],[6,7,8],[9,0,1]]
+Z = numpy.matrix(l)
+print(Z)
+
+print('Transposta de uma matriz:')
+print(Z.T)
+
+print('Inversa da matriz:')
+print(Z.I)
+R = numpy.matrix([[3,2,1]])
+
+print('Multiplicação de matrizes:')
+print(R*Z)
+
+print('Resolvendo um sistema linera:')
+print(numpy.linalg.solve(Z,numpy.array([0,1,2])))
+
+from numpy import *
+A = array([(9,4,2), (5,3,1),(2,0,7)])
+print('Matriz A:')
+print(A) # Esta linha irá exibir a matriz A
